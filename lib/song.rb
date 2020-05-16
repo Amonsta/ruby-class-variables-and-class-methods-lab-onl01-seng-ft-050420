@@ -21,9 +21,9 @@ class Song
   end 
   
   def initialize (count, genres, artists)
-    @@count += 1 
-    @@genres += 1 
-    @@artists += 1 
+    @@count += 1 << self
+    @@genres += 1 << self 
+    @@artists += 1 << self 
   end
 
 end
